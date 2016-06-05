@@ -1,0 +1,9 @@
+---
+- name: copy repository the mongodb.repo
+  copy: src=mongodb.repo dest=/etc/yum.repos.d/
+
+- name: install the MongoDB
+  yum: name=mongodb-org state=latest enablerepo=mongodb
+
+- name: start and enabled mongod service
+  service: name=mongod state=started enabled=yes
