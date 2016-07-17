@@ -1,4 +1,4 @@
-# ansible-mongodb
+# MongoDB Role
 
 Ansible mongodb role for centos7.
 
